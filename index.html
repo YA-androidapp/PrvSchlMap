@@ -8,21 +8,21 @@
     </style>
     <script type></script>
     <script src="data.js"></script>
-    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script src="OpenLayers.js"></script>
     <script>
         window.onload = function(){
             var defLng = 139.7528, defLat = 35.685175;
 
             centerLocation = new OpenLayers.Geometry.Point(defLng, defLat).transform('EPSG:4326', 'EPSG:3857');
 
-            icons = [["http://labs.google.com/ridefinder/images/mm_20_red.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_orange.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_yellow.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_green.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_blue.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_purple.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_gray.png",12, 20, -20],
-            ["http://labs.google.com/ridefinder/images/mm_20_white.png",12, 20, -20]];
+            icons = [["icon/red.png",14, 20, -20],
+            ["icon/orange.png",14, 20, -20],
+            ["icon/yellow.png",14, 20, -20],
+            ["icon/green.png",14, 20, -20],
+            ["icon/blue.png",14, 20, -20],
+            ["icon/purple.png",14, 20, -20],
+            ["icon/gray.png",14, 20, -20],
+            ["icon/aqua.png",14, 20, -20]];
 
             layers = new Array(icons.length);
             for (i=0; i<layers.length; i++){
